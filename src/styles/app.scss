@@ -1,0 +1,58 @@
+.navbar-link {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(33, 128, 206);
+  background-color: rgb(33, 128, 206);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: rgb(33, 128, 206);
+  }
+}
+
+.btn-outlined {
+  border: 1px solid #1b1b1b;
+  background-color: #ffffff;
+  color: #1b1b1b;
+
+  &:hover {
+    background-color: #1b1b1b;
+    color: #ffffff;
+  }
+}
+
+.input {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid rgb(33, 128, 206);
+}
+
+.input:focus {
+  box-shadow: 0 0 10px rgb(33, 128, 206);
+}
+
+.loading {
+  text-align: center;
+}
+
+@import "./navbar";
+@import "./global-stats";
+@import "./cryptos";
+@import "./news";
+@import "./crypto-details";
+@import "./exchange";
+@import "./about";

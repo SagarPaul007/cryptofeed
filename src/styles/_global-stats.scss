@@ -1,0 +1,46 @@
+.global-stats {
+  padding: 5rem 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .stats-heading {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #1b1b1b;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .stats-item {
+      border: 1px solid rgb(33, 128, 206);
+      margin: 0 10px 10px 0;
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      p {
+        color: rgb(73, 73, 73);
+      }
+
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .global-stats {
+    padding: 3rem 1rem;
+  }
+
+  .stats {
+    .stats-item {
+      padding: 5px 10px;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.crypto-details-container {
+  width: 100%;
+  padding: 3rem 8%;
+
+  .chart {
+    padding: 3rem 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    z-index: 20;
+
+    .chart-heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      div {
+        display: flex;
+
+        h1 {
+          font-size: 20px;
+          margin-right: 20px;
+        }
+
+        select {
+          outline: none;
+          border: 1px solid rgb(33, 128, 206);
+          background-color: rgb(33, 128, 206);
+          color: white;
+        }
+      }
+    }
+
+    .chart-container {
+      background-color: #fff3f3;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  .crypto-heading {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .img {
+      width: 100px;
+      margin-left: 50px;
+    }
+  }
+
+  .crypto-details {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      border: 1px solid rgb(33, 128, 206);
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 0 10px 10px 0;
+
+      p {
+        opacity: 0.8;
+      }
+
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .crypto-description {
+    .description {
+      margin-top: 50px;
+
+      h2 {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 500;
+        border-bottom: 2px solid rgb(33, 128, 206);
+      }
+      h3 {
+        font-weight: 500;
+        margin: 10px 0;
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0, 26, 47, 0.9);
+      }
+    }
+
+    .links {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .link {
+        background-color: rgb(144, 205, 255);
+        border: 1px solid rgb(144, 205, 255);
+        border-radius: 10px;
+        margin: 0 10px 10px 0;
+        padding: 10px 20px;
+
+        h3 {
+          font-weight: 500;
+        }
+
+        a {
+          color: rgb(75, 0, 93);
+
+          img {
+            width: 16px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .crypto-details-container {
+    padding: 3rem 1rem;
+
+    .chart {
+      padding: 1rem;
+
+      .chart-container {
+        position: absolute;
+        width: 80vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%) rotate(90deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .crypto-details-container {
+    .crypto-heading {
+      h1 {
+        font-size: 30px;
+      }
+
+      .img {
+        margin-left: 20px;
+        width: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.exchanges-container {
+  padding: 3rem 8%;
+
+  .exchanges-header,
+  .item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #6b6b6b;
+    background-color: rgb(243, 243, 243);
+
+    .exchanges-header-details,
+    .item-details {
+      display: flex;
+    }
+    p,
+    a {
+      width: 200px;
+      padding: 10px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+
+  .item:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+  }
+
+  .exchange-details {
+    padding: 20px 10px;
+    border: 1px solid #6b6b6b;
+    background-color: rgba(243, 243, 243, 0.6);
+
+    h2,
+    h3 {
+      font-weight: 500;
+      font-size: 22px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .exchanges-container {
+    padding: 3rem 8%;
+
+    .exchanges-header,
+    .item {
+      .exchanges-header-details,
+      .item-details {
+        display: flex;
+      }
+      p,
+      a {
+        width: 150px;
+      }
+
+      .website {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .exchanges-container {
+    padding: 3rem 1rem;
+
+    .exchanges-header,
+    .item {
+      p {
+        font-size: 12px;
+        width: 70px;
+      }
+    }
+  }
+}

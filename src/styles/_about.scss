@@ -1,0 +1,23 @@
+.about-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  a {
+    color: rgb(33, 128, 206);
+  }
+
+  img {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 30% 70% 51% 49% / 30% 30% 70% 70%;
+    box-shadow: 0 0 10px rgb(33, 128, 206);
+  }
+}
