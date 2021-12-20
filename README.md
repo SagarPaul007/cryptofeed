@@ -1,5 +1,24 @@
 # Cryptofeed
 
-## Latest crypto details and news
+Find latest crypto price, market cap, top news etc.
 
-Live:- https://cryptofeed-sp.netlify.app
+## Features
+
+- Global Crypto Stats
+- Top Cryptocurrencies and their details
+- Latest crypto news
+- Exchanges
+
+## Tech Stack
+
+**Client:** React, SASS
+
+**api:** Rapid Api
+
+## Screenshots
+
+![App Screenshot](./src/images/ss.png)
+
+## Authors
+
+- [@sagarpaul](https://www.github.com/SagarPaul007)
